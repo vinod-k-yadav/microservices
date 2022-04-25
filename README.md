@@ -11,7 +11,5 @@ Microservices:
     OrderServices: handles Order related stuff like placing and creating order.
     FrontendServices : This handles all frontend related stuff or interacting with end user.
     
-    ![This is an image](.image1.png)
+    ![This is an image](https://user-images.githubusercontent.com/6715521/165019662-3be7584f-90ea-447e-a058-182aac1adf76.png)
     
- 
-    <img width="858" alt="image1" src="https://user-images.githubusercontent.com/6715521/165019662-3be7584f-90ea-447e-a058-182aac1adf76.png">
