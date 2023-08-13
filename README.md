@@ -2,7 +2,7 @@
 Basic implementation of microservices using Python , Flask and Docker.
 The purpose of this repo is only demonstrate the concept of  microservices using python and how to microservices communicate each others.
 
-Used Flask as web framework to demonstrate the microservices. Havn't used any databases.
+Used Flask as web framework to demonstrate the microservices. Used REDIS key-value database server.
 
 Microservices:
    
