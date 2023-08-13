@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-tier
+  labels:
+    app: dummy-project
+    tier: backend
+spec:
+  containers:
+    - name: product-container
+      image : product_image:v1
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 6200
+
+    - name: user-container
+      image : user_image:v1
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 6300
+      env:
+        - name: REDIS_URL
+          value: redis://$(DATA_TIER_SERVICE_HOST):$(DATA_TIER_SERVICE_PORT_REDIS)/0
+
+    - name: order-container
+      image : order_image:v1
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 6100
+     
+       
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-tier
+  labels:
+    app: dummy-project
+spec:
+  ports:
+  - name: product 
+    port: 7200
+    targetPort: 6200 #container-port
+
+  - name: order 
+    port: 7100
+    targetPort: 6100 #container-port
+  
+  - name: user
+    port: 7300
+    targetPort: 6300 #container-port
+
+  selector:
+    tier: backend
+  type: NodePort
+---

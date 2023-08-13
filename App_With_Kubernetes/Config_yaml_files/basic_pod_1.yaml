@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend-pod
+  labels:
+    app: frontend_server
+spec :
+  containers : 
+  - name : frontend-container-k
+    image : frontend_container_committed:latest
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 6000
+      hostPort: 6000
+  
