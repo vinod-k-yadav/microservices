@@ -15,9 +15,13 @@ Microservices:
 
 # Intergrating Kubernetes and Docker.
 
-Created multiple pods each for fornetend , backend and data. and deploy microservices using Kubernetes.
+Created multiple pods each for fornetend , backend and data. and deploy microservices using Kubernetes
 
 Architecture diagram:
+
+![mutlipod-architecture1](https://github.com/vinod-k-yadav/microservices/assets/6715521/7f8f3f02-5dc8-4f8a-aa75-df9c0a80fc3b)
+
+
 
 
 
