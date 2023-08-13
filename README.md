@@ -12,4 +12,15 @@ Microservices:
     FrontendServices : This handles all frontend related stuff or interacting with end user.
     
   ![This is an image](./image1.png)
+
+# Intergrating Kubernetes and Docker.
+
+Created multiple pods each for fornetend , backend and data. and deploy microservices using Kubernetes.
+
+Architecture diagram:
+
+
+
+ 
+
     
