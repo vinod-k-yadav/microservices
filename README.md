@@ -21,6 +21,7 @@ Architecture diagram:
 
 ![mutlipod-architecture1](https://github.com/vinod-k-yadav/microservices/assets/6715521/7f8f3f02-5dc8-4f8a-aa75-df9c0a80fc3b)
 
+All related code and yaml files are under App_with_kubernetes.
 
 
 
